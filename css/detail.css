@@ -1,0 +1,68 @@
+:root {
+    --primary: #3871C1;
+    --primary-deep: #8EAFDD;
+    --primary-deep2: #363D46;
+    --primary-light: #F4E244;
+    --secondary: #ba5e5d;
+    --secondary-deep: #af1e15;
+    --secondary-deep2: #ba0302;
+    --secondary-light: #B98584;
+    --info: rgba(212, 202, 205);
+    --h1: 64px;
+    --h2: 48px;
+    --h3: 40px;
+    --h4: 36px;
+    --h5: 32px;
+    --h6: 24px;
+    --p: 20px;
+    --p1: 16px;
+    --p2: 12px;
+}
+.container{
+    margin-top: 50px;
+}
+#main-image {
+    width: 560px;
+    height: 460px;
+}
+.thumbnail-images {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.thumbnail-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 2px solid transparent;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.thumbnail-image:hover {
+    border: 2px solid #333;
+}
+.car-title{
+    font-size: var(--h3);
+}
+
+.refit{
+    font-size: var(--h6);
+    list-style: none;
+    padding-left: 0;
+}
+/* 加大核取方塊 */
+.refit input[type="checkbox"] {
+    transform: scale(1.5);
+    /* 調整核取方塊的大小，這裡使用 1.5 倍 */
+    margin-right: 10px;
+    /* 調整核取方塊與文字之間的間距 */
+}
+.price{
+    font-size: var(--h4);
+}
+.sub-items{
+    list-style: none;
+}
+

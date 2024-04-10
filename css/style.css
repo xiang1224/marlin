@@ -1,0 +1,208 @@
+:root {
+    --primary: #3871C1;
+    --primary-deep: #8EAFDD;
+    --primary-deep2: #363D46;
+    --primary-light: #F4E244;
+    --secondary: #ba5e5d;
+    --secondary-deep: #af1e15;
+    --secondary-deep2: #ba0302;
+    --secondary-light: #B98584;
+    --info: rgba(212, 202, 205);
+    --h1: 64px;
+    --h2: 48px;
+    --h3: 40px;
+    --h4: 36px;
+    --h5: 32px;
+    --h6: 24px;
+    --p: 20px;
+    --p1: 16px;
+    --p2: 12px;
+}
+
+nav {
+    background-color: var(--primary-deep2);
+}
+
+.navbar-toggler-icon {
+    /* 或設定背景色，例如灰色 */
+    background-image: url('/img/burger.png');
+}
+
+a.navbar-brand {
+    margin-left: 50px;
+    color: white;
+    font-size: var(--h3);
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+a.navbar-brand:hover {
+    margin-left: 50px;
+    color: white;
+    font-size: var(--h3);
+}
+
+a.nav-link {
+    color: white;
+    font-size: var(--h6);
+}
+
+a.nav-link:hover,
+a.nav-link:active,
+a.nav-link:focus {
+    color: var(--primary);
+    font-size: var(--h6);
+}
+
+.navbar-nav {
+    margin-right: 50px;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    color: white;
+    /* 文字顏色為白色 */
+    background-color: var(--primary-deep2);
+    /* 背景顏色為黑色 */
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+
+
+#updated-models {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+#updated-models li {
+    margin-bottom: 10px;
+}
+/* 新增這些 CSS 規則來美化確認按鈕 */
+#confirm-btn {
+    background-color: var(--primary);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#confirm-btn:hover {
+    background-color: #2980b9;
+}
+marquee {
+    height: 50px;
+    background-color: var(--primary);
+    font-size: var(--h5);
+    color: white;
+}
+
+.carousel-item img{
+    height: 652px;
+}
+
+.carousel-caption {
+    background: linear-gradient(0.25turn, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.carousel-caption h5 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    margin-top: 5px;
+}
+
+.container {
+    background-color: #fff;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.index-title {
+    font-size: var(--h4);
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    border-bottom: black solid 2px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: black;
+    /* 設置您想要的背景顏色 */
+}
+
+.footer-column {
+    flex: 1;
+    max-width: 50%;
+}
+
+.footer-column img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.footer-bottom {
+    background-color: black;
+    /* 設置您想要的版權宣告區背景顏色 */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.nylogo {
+    height: 270px;
+}
+
+@media (max-width:768px) {
+    .navbar-nav {
+        margin-left: 20px;
+        margin-right: auto;
+    }
+        a.navbar-brand {
+            margin-left: 15px;
+            color: white;
+            font-size: var(--h3);
+        }
+.carousel-item img {
+    height: 200px;
+}
+    .nylogo {
+        height: 175px;
+    }
+}
